@@ -207,6 +207,74 @@
       form button:hover {
         background-color: #0d9ddf;
       }
+      @media screen and (max-width: 1600px) {
+        .about-img-p {
+    flex-direction: column;
+    align-items: center;
+  }
+    .About {
+    padding: 5vh;
+    height: auto; /* remove fixed height */
+    text-align: center;
+  }
+      }
+
+      @media screen and (max-width: 768px) {
+  /* Home Section */
+  .Home {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* let it expand */
+    padding-top: 10vh;
+  }
+  .Home > div {
+    margin-bottom: 20px;
+  }
+  .Home > div > img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* About Section */
+  .About {
+    padding: 5vh;
+    height: auto; /* remove fixed height */
+    text-align: center;
+  }
+  .about-img-p {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-img-p img {
+    display: none;
+  }
+
+  /* Projects Section */
+  .My-Projects {
+    padding: 5vh;
+    height: auto; /* remove fixed height */
+  }
+  .My-Projects .projects {
+    flex-direction: column;
+    height: auto;
+  }
+  .projects > div {
+    width: 80%;
+    margin-bottom: 20px;
+    height: auto; /* remove fixed height */
+  }
+
+  /* Contact Section */
+  .Contact {
+    padding: 5vh 5vh;
+    height: auto; /* remove fixed height */
+  }
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -309,3 +377,4 @@
     </section>
   </body>
 </html>
+
