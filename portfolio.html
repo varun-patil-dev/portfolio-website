@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Varun Portfolio</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        color: white;
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+        background-color: #1b1f24;
+      }
+      header {
+        display: flex;
+        justify-content: space-around;
+        background-color: #1b1f24;
+        color: white;
+        font-family: sans-serif;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+        z-index: 10;
+      }
+      header nav {
+        display: flex;
+      }
+      header nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      header nav a:hover {
+        color: #12bdff;
+      }
+
+      /* Sections */
+      section {
+        padding-top: 10vh;
+      }
+
+      .Home {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 10vb;
+        height: 100vh;
+      }
+      .Home .links {
+        display: flex;
+        flex-direction: row;
+      }
+      .links a img {
+        border: 3px solid #12bdff;
+        border-radius: 50%;
+        padding: 2px;
+      }
+      .links a {
+        margin: 20px;
+      }
+      .Home > div > img {
+        height: 320px;
+        width: 320px;
+        overflow: hidden;
+        object-fit: cover;
+        padding: 5px;
+        border: 3px solid #12bdff;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgb(18, 189, 255, 0.5);
+      }
+
+      .About {
+        background-color: #22282f;
+        height: 100vh;
+        padding: 10vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .About h2 {
+        color: #12bdff;
+        font-size: 42px;
+      }
+      .About p {
+        color: #c4c4c4;
+        margin: 8vh;
+        font-size: larger;
+      }
+      .about-img-p {
+        display: flex;
+        justify-content: space-between;
+      }
+      .About img {
+        height: 50vh;
+        border: 3px solid #0d9ddf;
+        padding: 4px;
+        border-radius: 20px;
+      }
+      .Know-more {
+        background-color: #12bdff;
+        color: black;
+        padding: 10px;
+        font-weight: bolder;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .My-Projects {
+        height: 100vh;
+        padding: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .projects {
+        display: flex;
+        background-color: #1b1f24;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+        border: none;
+        border-radius: 10px;
+      }
+      .projects > div {
+        width: 30%;
+        background-color: #22282f;
+        margin: auto;
+        height: 90%;
+        border: 2px solid #12bdff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #12bdff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5% 2%;
+        text-align: center;
+      }
+      .projects img {
+        object-fit: cover;
+        border-radius: 50px;
+        height: 90px;
+        width: 90px;
+      }
+      .projects button {
+        background-color: #12bdff;
+        color: black;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .projects button:hover {
+        background-color: #0d9ddf;
+      }
+
+      .Contact {
+        background-color: #22282f;
+        height: 100vh;
+        padding: 14vh 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .Contact h1 {
+        margin-bottom: 40px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: #1b1f24;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #12bdff;
+      }
+      form input,
+      form textarea {
+        margin: 10px 0;
+        padding: 12px;
+        border: 2px solid #12bdff;
+        border-radius: 5px;
+        background-color: #22282f;
+        color: white;
+        font-size: 16px;
+      }
+      form button {
+        background-color: #12bdff;
+        color: black;
+        font-weight: bold;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      form button:hover {
+        background-color: #0d9ddf;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header style="font-size: larger">
+      <span style="color: #12bdff">Developer</span>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="Home">
+      <div>
+        <h4>Hi, There!</h4>
+        <h2 style="font-size: 48px">
+          I'm <span style="color: #12bdff">Varun</span>
+        </h2>
+        <p style="font-size: 20px; color: #c4c4c4">
+          An ambitious <strong style="color: #12bdff">19-year-old</strong> who
+          aspires to build great products and loves turning
+          <strong style="color: #12bdff">ideas into reality</strong>.
+        </p>
+        <div class="links">
+          <a href="#"><img src="https://i.pinimg.com/736x/6b/ab/30/6bab3017350ca04c6fa05569672bd31e.jpg" height="44px" width="44px" /></a>
+          <a href="#"><img src="https://cdn.iconscout.com/icon/free/png-512/free-github-icon-svg-download-png-3073768.png?f=webp&w=512" height="44px" width="44px" /></a>
+        </div>
+      </div>
+      <div>
+        <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/67344c866c473c001d68c110.png" width="350px" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="About">
+      <div>
+        <h2>About <span style="color: whitesmoke">Me</span></h2>
+        <h3>Aspiring <span style="color: #12bdff">AI/ML Engineer</span></h3>
+      </div>
+      <div class="about-img-p">
+        <div>
+          <img src="https://twinkly.com/cdn/shop/articles/blogpost-gamingroom.jpg?v=1756802661" />
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <p>
+            I’m a first-year Computer Science student at Scaler School of
+            Technology, extremely curious by nature and always eager to explore
+            new ideas. I love solving problems by diving in, breaking things, and learning as I
+            go.
+            <br /><br />
+            My long-term ambition is to turn ideas into impactful products —
+            tools that not only work but also inspire.
+          </p>
+          <div>
+            <button class="Know-more">Know More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="My-Projects">
+      <div>
+        <h1>My <span style="color: #12bdff">Projects</span></h1>
+      </div>
+      <div class="projects">
+        <div>
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/15990.png" />
+          <h4>"Hello World!" in Java</h4>
+          <p>Typed "Hello World!" using System.out.println(); syntax.</p>
+          <button >View Project</button>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/b6/f5/b4/b6f5b4fd59507360c3753e7738068530.jpg" />
+          <h4>"Hello World!" in HTML</h4>
+          <p>Typed "Hello World!" using h1 tag in HTML</p>
+          <button >View Project</button>
+        </div>
+        <div>
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16094.png" />
+          <h4>"Hello World!" in Python</h4>
+          <p>Typed "Hello World!" using print() syntax</p>
+          <button >View Project</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="Contact">
+      <h1><span style="color: #12bdff">Contact</span> Me!</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Contact Details (Email or Phone)" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </body>
+</html>
