@@ -207,18 +207,33 @@
       form button:hover {
         background-color: #0d9ddf;
       }
-      @media (max-width: 1200px) {
-        .about-img-p {
-    flex-direction: column;
-    align-items: center;
-  }
-    .About {
+      @media ( min-width: 769px) and (max-width: 1000px) {
+        .About {
     padding: 5vh;
     height: auto; /* remove fixed height */
     text-align: center;
   }
+  .about-img-p {
+    flex-direction: column;
+    align-items: center;
+  }
   .about-img-p img {
     display: none;
+  }
+
+  /* Projects Section */
+  .My-Projects {
+    padding: 5vh;
+    height: auto; /* remove fixed height */
+  }
+  .My-Projects .projects {
+    flex-direction: column;
+    height: auto;
+  }
+  .projects > div {
+    width: 80%;
+    margin-bottom: 20px;
+    height: auto; /* remove fixed height */
   }
       }
 
